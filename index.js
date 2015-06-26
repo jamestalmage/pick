@@ -1,34 +1,31 @@
 /* globals define: false, module: false */
 (function(){
   var pick = {
-    min: min,
-    max: max
+    min: make(min, Number.POSITIVE_INFINITY),
+    max: make(max, Number.NEGATIVE_INFINITY)
   };
 
-  function min(array, fn, defaultValue){
-    return array.reduce(minReduce, {min:Number.POSITIVE_INFINITY, item:defaultValue, fn:stringToFn(fn)}).item;
+  function min(a, b){
+    return a < b;
   }
 
-  function max(array, fn, defaultValue){
-    return array.reduce(maxReduce, {max:Number.NEGATIVE_INFINITY, item:defaultValue, fn:stringToFn(fn)}).item;
+  function max(a, b){
+    return a > b;
   }
 
-  function minReduce(currentValue, item, index, array){
-    var value = currentValue.fn(item, index, array);
-    if (value < currentValue.min) {
-      currentValue.item = item;
-      currentValue.min = value;
+  function make(test, startValue) {
+    return function(array, fn, defaultValue) {
+      return array.reduce(reduceFn, {value:startValue, item:defaultValue, fn:stringToFn(fn)}).item;
+    };
+
+    function reduceFn(currentValue, item, index, array) {
+      var value = currentValue.fn(item, index, array);
+      if (test(value, currentValue.value)) {
+        currentValue.item = item;
+        currentValue.value = value;
+      }
+      return currentValue;
     }
-    return currentValue;
-  }
-
-  function maxReduce(currentValue, item, index, array){
-    var value = currentValue.fn(item, index, array);
-    if (value > currentValue.max) {
-      currentValue.item = item;
-      currentValue.max = value;
-    }
-    return currentValue;
   }
 
   function stringToFn(fn) {
@@ -39,7 +36,6 @@
     }
     return fn;
   }
-
 
   /* istanbul ignore next */
   if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
