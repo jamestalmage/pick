@@ -1,6 +1,6 @@
 {
   "name": "pick",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Pick a single item from an array",
   "main": "index.js",
   "scripts": {
