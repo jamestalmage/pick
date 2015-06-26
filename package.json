@@ -1,0 +1,34 @@
+{
+  "name": "pick",
+  "version": "0.0.0",
+  "description": "Pick a single item from an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-node && npm run test-browser",
+    "test-node": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "test-browser": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamestalmage/pick.git"
+  },
+  "keywords": [
+    "array",
+    "arrays"
+  ],
+  "author": "James Talmage <james@talmage.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamestalmage/pick/issues"
+  },
+  "homepage": "https://github.com/jamestalmage/pick#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "istanbul": "^0.3.16",
+    "karma": "^0.12.37",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17"
+  }
+}

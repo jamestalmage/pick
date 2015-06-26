@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Basic Node template
+.logs
+coverage
+node_modules
+.idea
+
