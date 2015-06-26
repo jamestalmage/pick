@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jamestalmage/pickit.svg?branch=master)](https://travis-ci.org/jamestalmage/pickit)
 [![Code Climate](https://codeclimate.com/github/jamestalmage/pickit/badges/gpa.svg)](https://codeclimate.com/github/jamestalmage/pickit)
-[![Coverage Status](https://coveralls.io/repos/jamestalmage/pickit/badge.svg)](https://coveralls.io/r/jamestalmage/pickit)
+[![Coverage Status](https://coveralls.io/repos/jamestalmage/pickit/badge.svg?branch=master)](https://coveralls.io/r/jamestalmage/pickit?branch=master)
 [![Dependency Status](https://david-dm.org/jamestalmage/pickit.svg)](https://david-dm.org/jamestalmage/pickit)
 [![devDependency Status](https://david-dm.org/jamestalmage/pickit/dev-status.svg)](https://david-dm.org/jamestalmage/pickit#info=devDependencies)
 
