@@ -1,6 +1,6 @@
 {
   "name": "pickit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pick a single item from an array",
   "main": "index.js",
   "scripts": {
