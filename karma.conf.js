@@ -9,5 +9,5 @@ module.exports = function(karma) {
     browsers: ['PhantomJS'],
     singleRun: true,
     autoWatch: false
-  })
+  });
 };

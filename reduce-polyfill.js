@@ -1,5 +1,6 @@
 // Production steps of ECMA-262, Edition 5, 15.4.4.21
 // Reference: http://es5.github.io/#x15.4.4.21
+// jshint ignore: start
 if (!Array.prototype.reduce) {
   Array.prototype.reduce = function(callback /*, initialValue*/) {
     'use strict';
@@ -29,3 +30,4 @@ if (!Array.prototype.reduce) {
     return value;
   };
 }
+// jshint ignore: end

@@ -1,3 +1,4 @@
+/* globals define: false, module: false */
 (function(){
   var pick = {
     min: min,
@@ -34,7 +35,7 @@
     if ('string' === typeof fn) {
       return function(x) {
         return x[fn];
-      }
+      };
     }
     return fn;
   }
