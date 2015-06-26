@@ -1,6 +1,6 @@
 /* globals define: false, module: false */
 (function(){
-  var pick = {
+  var pickit = {
     min: make(min, Number.POSITIVE_INFINITY),
     max: make(max, Number.NEGATIVE_INFINITY)
   };
@@ -39,16 +39,16 @@
 
   /* istanbul ignore next */
   if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = pick;
+    module.exports = pickit;
   }
   else {
     if (typeof define === 'function' && define.amd) {
       define([], function () {
-        return pick;
+        return pickit;
       });
     }
     else {
-      window.pick = pick;
+      window.pickit = pickit;
     }
   }
 })();

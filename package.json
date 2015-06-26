@@ -1,6 +1,6 @@
 {
-  "name": "pick",
-  "version": "0.0.1",
+  "name": "pickit",
+  "version": "0.0.0",
   "description": "Pick a single item from an array",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamestalmage/pick.git"
+    "url": "git+https://github.com/jamestalmage/pickit.git"
   },
   "keywords": [
     "array",
@@ -19,9 +19,13 @@
   "author": "James Talmage <james@talmage.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jamestalmage/pick/issues"
+    "url": "https://github.com/jamestalmage/pickit/issues"
   },
-  "homepage": "https://github.com/jamestalmage/pick#readme",
+  "files": [
+    "index.js",
+    "reduce-polyfill.js"
+  ],
+  "homepage": "https://github.com/jamestalmage/pickit#readme",
   "devDependencies": {
     "chai": "^3.0.0",
     "istanbul": "^0.3.16",

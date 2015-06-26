@@ -1,7 +1,7 @@
 if ('function' === typeof require) {
   var chai = require('chai');
 
-  var pick = require('..');
+  var pickit = require('..');
 }
 
 describe('pick', function() {
@@ -20,21 +20,21 @@ describe('pick', function() {
 
   describe('min - finds the minimum ', function () {
     it('using a callback function', function() {
-      expect(pick.min(array, function(x){return x.age;}).name).to.equal('Noah');
+      expect(pickit.min(array, function(x){return x.age;}).name).to.equal('Noah');
     });
 
     it('using a string property name', function() {
-      expect(pick.min(array, 'siblings').name).to.equal('Noah');
+      expect(pickit.min(array, 'siblings').name).to.equal('Noah');
     });
   });
 
   describe('max - finds the maximum ', function () {
     it('using a callback function', function() {
-      expect(pick.max(array, function(x){return x.age;}).name).to.equal('Susan');
+      expect(pickit.max(array, function(x){return x.age;}).name).to.equal('Susan');
     });
 
     it('using a string property name', function() {
-      expect(pick.max(array, 'siblings').name).to.equal('James');
+      expect(pickit.max(array, 'siblings').name).to.equal('James');
     });
   });
 });
