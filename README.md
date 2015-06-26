@@ -1,10 +1,10 @@
 # pickit
 
-[![Build Status](https://travis-ci.org/jamestalmage/pick.svg?branch=master)](https://travis-ci.org/jamestalmage/pick)
-[![Code Climate](https://codeclimate.com/github/jamestalmage/pick/badges/gpa.svg)](https://codeclimate.com/github/jamestalmage/pick)
-[![Coverage Status](https://coveralls.io/repos/jamestalmage/pick/badge.svg)](https://coveralls.io/r/jamestalmage/pick)
-[![Dependency Status](https://david-dm.org/jamestalmage/pick.svg)](https://david-dm.org/jamestalmage/pick)
-[![devDependency Status](https://david-dm.org/jamestalmage/pick/dev-status.svg)](https://david-dm.org/jamestalmage/pick#info=devDependencies)
+[![Build Status](https://travis-ci.org/jamestalmage/pickit.svg?branch=master)](https://travis-ci.org/jamestalmage/pickit)
+[![Code Climate](https://codeclimate.com/github/jamestalmage/pickit/badges/gpa.svg)](https://codeclimate.com/github/jamestalmage/pickit)
+[![Coverage Status](https://coveralls.io/repos/jamestalmage/pickit/badge.svg)](https://coveralls.io/r/jamestalmage/pickit)
+[![Dependency Status](https://david-dm.org/jamestalmage/pickit.svg)](https://david-dm.org/jamestalmage/pickit)
+[![devDependency Status](https://david-dm.org/jamestalmage/pickit/dev-status.svg)](https://david-dm.org/jamestalmage/pickit#info=devDependencies)
 
 ```javascript
 var pick = require('pickit');
